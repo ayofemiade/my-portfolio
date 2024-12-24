@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Website </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--box ivon link-->
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <!--remix icon link-->
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <!--google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preload" as="image" href="image/logo ot.jpg">
+    <link rel="preload" as="image" href="image/ore.jpg">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="image/logo ot.jpg" fetchpriority="high" alt="logo">
+        </a>
+        <ul class="navlink">
+            <a href="#Home">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Exhibitions</a>
+            <a href="#contact">Contact</a>
+        </ul>
+
+        
+  
+       
+
+        <div class="nav-side">
+            <button class="toggle-button" onclick="toggleMode()"><i class='bx bx-sun'></i></button>
+            <a href="https://www.linkedin.com/in/moyosoreoluwa-ayofemi-adetoye-07850729a" target="_blank" class="n-btn">Hire Me</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <!--home-->
+    <section class="home" id="Home">
+        <div class="home-text">
+            
+            <h1>Hello, I'm <br>Moyosore</h1>
+            <h4>Frontend Developer</h4>
+           
+        </div>
+
+        <div class="home-img">
+            <img src="image/ore.jpg" alt="profile" fetchpriority="high">
+        </div>
+
+        <div class="social">
+            <a href="https://github.com/ayofemiade"><i class="ri-github-line"></i></a>
+            <a href="https://www.linkedin.com/in/moyosoreoluwa-ayofemi-adetoye-07850729a"><i class="ri-linkedin-line"></i></a>
+            <a href="https://www.instagram.com/moyocode/profilecard/?igsh=MXc3YmRkYzI1aDY2"><i class="ri-instagram-line"></i></a>
+            <a href="https://wa.link/x8dnti"><i class="ri-whatsapp-line"></i></a>
+        </div>
+
+       
+    </section>
+        
+
+     <div id="about">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image/oo.jpg" alt="profile" fetchpriority="high">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Passionate and detail-oriented front-end developer with certifications in HTML, CSS, and JavaScript.
+                     Skilled in creating responsive, user-friendly web applications with a focus on functionality and design. 
+                     Strong understanding of modern web development principles and a commitment to writing clean, maintainable code.
+                      Seeking to leverage technical skills and creativity in a challenging front-end development role to build innovative, engaging digital experiences.</p>
+
+                      <div class="tab-titles">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                      </div>
+                      <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Designing web inerfaces</li>
+                            <li><span>Responsive and Mobile Design</span><br>Techniques to ensure web content adapts to different screen sizes </li>
+                            <li><span>Testing and Debugging</span><br>Debugging JavaScript, inspecting HTML/CSS, and monitoring network requests.</li>
+                            <li><span>Problem-Solving</span><br>Debugging issues and finding solutions efficiently.</li>
+                            <li><span>Communication/Teamwork</span><br>Explaining design and code choices to stakeholders and working collaboratively with teams.</li>
+                        </ul>
+                      </div>
+                      <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>Frontend Developer – Storm Project
+                                ( August 2024 – Present)</span><br>
+                                
+                                Developed User Interfaces: Built responsive and visually appealing user interfaces using HTML, CSS, and JavaScript, ensuring cross-browser compatibility and a consistent user experience across devices.<br><br>
+                                Collaborated on Component Design: Worked closely with team members to design and develop reusable, modular components, improving development speed and code maintainability.<br><br>
+                                Implemented Interactive Features: Added interactivity to enhance user engagement using JavaScript (or any library/framework, if applicable).<br><br>
+                                Optimized Performance: Focused on performance optimization through efficient code, minified assets, and optimized images, contributing to faster page load times and a smoother user experience.<br><br>
+                                Responsive and Mobile-First Design: Ensured the application’s layout and components worked seamlessly on both desktop and mobile devices.</li>
+                           
+                        </ul>
+                      </div>
+
+
+                      <div class="tab-content" id="education">
+                        <div class="education-grid">
+                            <div class="education-info">
+                                <ul>
+                                    <li><span>2023 - 2027</span><br> Bachelor of Software Engineering- Chrisland University</li>
+                                </ul>
+                            </div>
+                            <div class="certifications">
+                                <h3>Certifications</h3>
+                                <div class="cert-grid">
+                                    <div class="cert-card">
+                                        <i class='bx bx-certification'></i>
+                                        <h4>Responsive Web Design</h4>
+                                        <p>FreeCodeCamp - 2024</p>
+                                        <a href="https://freecodecamp.org/certification/fccb4c2ecd6-83c3-47f9-8c8c-72f0b9cb7d77/responsive-web-design" target="_blank" class="cert-link">View Certificate</a>
+                                    </div>
+                                    <div class="cert-card">
+                                        <i class='bx bx-certification'></i>
+                                        <h4>JavaScript Algorithms</h4>
+                                        <p>FreeCodeCamp - 2024</p>
+                                        <a href="https://freecodecamp.org/certification/fccb4c2ecd6-83c3-47f9-8c8c-72f0b9cb7d77/javascript-algorithms-and-data-structures-v8" target="_blank" class="cert-link">View Certificate</a>
+                                    </div>
+                                    <div class="cert-card">
+                                        <i class='bx bx-certification'></i>
+                                        <h4>Javascript Fundamentals</h4>
+                                        <p>Greatstack - 2024</p>
+                                        <a href="https://quiz.greatstack.dev/validate/jsbsU53vCGLJOoh5Mwt3dDABOIqczLZ2" target="_blank" class="cert-link">View Certificate</a>
+                                    </div>
+                                    <div class="cert-card">
+                                        <i class='bx bx-certification'></i>
+                                        <h4>Effective Business Website</h4>
+                                        <p>HP life - 2024</p>
+                                        <a href="https://www.life-global.org/certificate/1cb70865-13f1-4e39-b8d4-12408437abf9" target="_blank" class="cert-link">View Certificate</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+     </div>
+
+
+
+
+
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/resobridge.jpeg" alt="Expense Tracker" loading="lazy">
+                   <div class="layer">
+    <h3>Expense Tracker</h3>
+    <p> Expense Tracker is a user-friendly tool designed to help you monitor and manage your daily expenses effectively.</p>
+    <div class="project-links">
+        <a href="https://github.com/ayofemiade/Expense-tracker" target="_blank"><i class='bx bxl-github'></i></a>
+        <a href="https://ayofemiade.github.io/Expense-tracker/" target="_blank"><i class='bx bx-link-external'></i></a>
+    </div>
+</div>
+
+                </div>
+                <div class="work">
+                    <img src="image/weather.jpeg" alt="Weather App" loading="lazy">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>A responsive weather application that provides real-time weather information using an API.</p>
+                        <div class="project-links">
+                        <a href="https://github.com/ayofemiade/weather-app" target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="https://ayofemiade.github.io/weather-app/" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/detofun.jpeg" alt="Real Estate Website" loading="lazy">
+                    <div class="layer">
+                        <h3>Real Estate Website</h3>
+                        <p>An intuitive platform for exploring properties, connecting buyers and sellers, and simplifying real estate transactions.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/ayofemiade/Detofun" target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="https://ayofemiade.github.io/Detofun/" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                    </div>
+                  
+                </div>
+            </div>
+
+            <a href="#portfolio" class="btn">See more</a>
+        </div>
+     </div>
+
+
+
+
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class='bx bxs-send'></i> oreayofemi@gmail.com</p>
+                    <p><i class='bx bxs-phone'></i> +2349076948522</p>
+                    <div class="social-icon">
+                        <a href="https://github.com/ayofemiade"><i class="ri-github-line"></i></a>
+                        <a href="https://www.linkedin.com/in/moyosoreoluwa-ayofemi-adetoye-07850729a"><i class="ri-linkedin-line"></i></a>
+                        <a href="https://www.instagram.com/moyocode/profilecard/?igsh=MXc3YmRkYzI1aDY2 "><i class="ri-instagram-line"></i></a>
+                        <a href="https://wa.link/x8dnti"><i class="ri-whatsapp-line"></i></a>
+                    </div>
+                    <a href="image/my resume.pdf" download="My_Resume.pdf" class="btn btn2">My Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2024 Ayofemi-Adetoye Moyosoreoluwa. All Rights Reserved.</p>
+            <div class="scroll-btn">
+                <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+            </div>
+        </div>
+     </div>
+
+
+    <script>
+        const header= document.querySelector("header");
+
+        window.addEventListener("scroll", function(){
+            header.classList.toggle("sticky", window.scrollY > 150);
+        });
+
+
+    var tablinks = document.getElementsByClassName("tab-link")
+    var tabcontents = document.getElementsByClassName("tab-content")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+
+
+    let menuIcon = document.querySelector('#menu-icon');
+let navlist = document.querySelector('.navlink');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navlist.classList.toggle('open');
+};
+
+window.onscroll = () => {
+    menuIcon.classList.remove('bx-x');
+    navlist.classList.remove('open');
+};
+
+
+
+function toggleMode() {
+    // Add or remove the light-mode class to the root element
+    document.documentElement.classList.toggle('light-mode');
+
+
+
+       // Get the icon element inside the toggle button
+       const icon = document.querySelector(".toggle-button i");
+
+// Switch the icon class between bx-sun and bx-moon
+if (document.documentElement.classList.contains("light-mode")) {
+    icon.classList.replace("bx-sun", "bx-moon"); // Change to moon icon
+} else {
+    icon.classList.replace("bx-moon", "bx-sun"); // Change to sun icon
+}
+
+    
+
+}
+
+
+
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwd0kRnSAWYdADJ0fVz68w5c7vJmFYByQOMg-aGlBy-LsnRbIA712HF5cVJ3HKPAh94/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg")
+const submitButton = form.querySelector('.btn2')
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  
+  // Disable submit button and show loading state
+  submitButton.disabled = true
+  submitButton.innerHTML = `
+    <div class="button-content">
+      <span class="loader"></span>
+      Sending...
+    </div>
+  `
+
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+      // Success state
+      msg.innerHTML = "Message sent successfully ✅"
+      msg.style.color = "#61b752"
+      
+      // Reset form and button
+      form.reset()
+      setTimeout(() => {
+        submitButton.disabled = false
+        submitButton.innerHTML = "Submit"
+        msg.innerHTML = ""
+      }, 5000)
+    })
+    .catch(error => {
+      // Error state
+      console.error('Error!', error.message)
+      msg.innerHTML = "Oops! Message not sent. Please try again. ❌"
+      msg.style.color = "#ff4444"
+      
+      // Reset button
+      submitButton.disabled = false
+      submitButton.innerHTML = "Submit"
+    })
+})
+
+
+
+
+// Additional projects data
+const additionalProjects = [
+    {
+        image: "image/moviemania.jpeg",
+        title: "Movie Website",
+        description: "Moviemania is a fully responsive movie website prototype designed to provide a seamless user experience across all devices. ",
+        link: "https://ayofemiade.github.io/Moviemania/",
+        github: "https://github.com/ayofemiade/Moviemania"
+    },
+    {
+        image: "image/task.jpeg",
+        title: "Task Management App",
+        description: "A comprehensive task management application with user authentication and project tracking.",
+        link: "https://ayofemiade.github.io/task-manager/",
+        github: "https://github.com/ayofemiade/task-manager"
+    },
+    {
+        image: "image/portfolio.jpeg",
+        title: "Portfolio",
+        description: "A fully responsive personal blog website with dynamic content and modern design.",
+        link: "https://ayofemiade.github.io/portfolio/",
+        github: "https://github.com/ayofemiade/portfolio"
+    },
+    {
+        image: "image/learn.jpeg",
+        title: "E-Learning Platform",
+        description: "An interactive online learning platform with course management and progress tracking.",
+        link: "https://ayofemiade.github.io/E-Learning/",
+        github: "https://github.com/ayofemiade/E-Learning"
+    },
+    {
+        image: "image/social.jpeg",
+        title: "Social Media Dashboard",
+        description: "A comprehensive social media analytics and management dashboard.",
+        link: "https://ayofemiade.github.io/social-media-dashboard/",
+        github: "https://github.com/ayofemiade/social-media-dashboard"
+    },
+    {
+        image: "image/techmart.jpeg",
+        title: "E-Commerce Website",
+        description: "A feature-rich and responsive eCommerce website prototype tailored for technology accessories..",
+        link: "https://ayofemiade.github.io/TechMart/",
+        github: "https://github.com/ayofemiade/TechMart"
+    }
+
+                        
+];
+
+
+// Get portfolio elements
+const workList = document.querySelector('.work-list');
+const seeMoreBtn = document.querySelector('.btn');
+
+// Flag to track if additional projects are loaded
+let additionalProjectsLoaded = false;
+
+// Function to create project card
+function createProjectCard(project) {
+    const workDiv = document.createElement('div');
+    workDiv.classList.add('work');
+    
+    workDiv.innerHTML = `
+        <img src="${project.image}">
+        <div class="layer">
+            <h3>${project.title}</h3>
+            <p>${project.description}</p>
+            <div class="project-links">
+                <a href="${project.github}" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="${project.link}" target="_blank"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+    `;
+    
+    return workDiv;
+}
+
+// Event listener for "See more" button
+seeMoreBtn.addEventListener('click', () => {
+    // Remember current scroll position
+    const currentScrollPosition = window.scrollY;
+
+    if (!additionalProjectsLoaded) {
+        // Add additional projects
+        additionalProjects.forEach(project => {
+            const projectCard = createProjectCard(project);
+            workList.appendChild(projectCard);
+        });
+        
+        // Change button text
+        seeMoreBtn.textContent = 'Show Less';
+        additionalProjectsLoaded = true;
+    } else {
+        // Remove additional projects
+        for (let i = 0; i < additionalProjects.length; i++) {
+            if (workList.lastChild) {
+                workList.removeChild(workList.lastChild);
+            }
+        }
+        
+        // Change button text back
+        seeMoreBtn.textContent = 'See more';
+        additionalProjectsLoaded = false;
+    }
+
+    // Restore scroll position
+    window.scrollTo(0, currentScrollPosition);
+});
+
+
+
+
+// Scroll-triggered animations
+document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-on-scroll');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    // Elements to animate on scroll
+    const animatedElements = [
+        '#about .row',
+        '#portfolio .container',
+        '#contact .container',
+        '.home-text'
+    ];
+
+    animatedElements.forEach(selector => {
+        const element = document.querySelector(selector);
+        if (element) {
+            observer.observe(element);
+        }
+    });
+
+    // Hover effects for social icons
+    const socialIcons = document.querySelectorAll('.social a, .social-icon a');
+    socialIcons.forEach(icon => {
+        icon.addEventListener('mouseover', (e) => {
+            e.target.style.transform = 'scale(1.2) translateY(-5px)';
+            e.target.style.color = 'var(--main-color)';
+        });
+
+        icon.addEventListener('mouseout', (e) => {
+            e.target.style.transform = 'scale(1) translateY(0)';
+            e.target.style.color = 'inherit';
+        });
+    });
+
+    // Typing effect for home text
+    const homeText = document.querySelector('.home-text h1');
+    if (homeText) {
+        const text = homeText.textContent;
+        homeText.textContent = '';
+        let index = 0;
+
+        function typeText() {
+            if (index < text.length) {
+                homeText.textContent += text.charAt(index);
+                index++;
+                setTimeout(typeText, 50);
+            }
+        }
+
+        typeText();
+    }
+
+    // Project hover interactions
+    const projects = document.querySelectorAll('.work');
+    projects.forEach(project => {
+        project.addEventListener('mouseenter', () => {
+            project.style.transform = 'scale(1.05)';
+            project.style.zIndex = '10';
+        });
+
+        project.addEventListener('mouseleave', () => {
+            project.style.transform = 'scale(1)';
+            project.style.zIndex = '1';
+        });
+    });
+});
+    </script>
+
+
+</body>
+</html>
